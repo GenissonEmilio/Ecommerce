@@ -16,11 +16,11 @@ export default function Home() {
 
         {/* Area de Produtos */}
         <div className="relative -mt-20 px-4 z-10">
-          <div className="grid grid-cols-3 gap-60 min-w-screen ">
+          <div className="max-w-screen grid grid-cols-2 justify-items-center gap-4">
             <Product />
             <Product />
             <Product />
-            
+            <Product />
           </div>
           
         </div>
