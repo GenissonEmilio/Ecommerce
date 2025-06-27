@@ -31,7 +31,7 @@
   "include": [
     "**/*.ts",
     "**/*.tsx",
-    "backend/src/cart/dto/c",
+    "../backend/src/cart/dto/c",
     "next-env.d.ts",
     ".next/types/**/*.ts"
   ],
