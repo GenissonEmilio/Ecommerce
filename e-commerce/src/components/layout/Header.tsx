@@ -34,8 +34,8 @@ export default function Header() {
       </div>
 
       {/* Parte 2: menu, login e signup */}
-      <div className="bg-[#1D2B66] p-3 h-10 flex items-center justify-between">
-        <div className="flex items-center text-white">
+      <div className="bg-[#1D2B66] p-2 h-10 flex items-center justify-between">
+        <div className="flex items-center text-white ml-0">
           <Menu />
           <span>Todos</span>
         </div>

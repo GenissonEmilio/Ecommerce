@@ -22,7 +22,7 @@ export default function Menu() {
     }, [isOpen]);
 
     return (
-        <div className="relative z-50 ml-4">
+        <div className="relative z-50 ml-1">
             {/* Botão Hambúrguer */}
             <button
                 onClick={handleClick}
