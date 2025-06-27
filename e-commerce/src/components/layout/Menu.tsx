@@ -34,18 +34,11 @@ export default function Menu() {
             </button>
 
             {/* Menu de opções */}
-            {/* 
-                {shouldRender && (
-                <div className={`absolute top-20 right-0 w-[200px] bg-white shadow-lg p-4 rounded-lg z-40 transition-transform duration-500 ease-in-out ${isOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"}`}>
-                    <ul className="space-y-2">
-                        <li><a href="#home" onClick={() => setOpen(false)} className="block text-black px-2 py-1 hover:bg-blue-500 rounded">Home</a></li>
-                        <li><a href="#sobre" onClick={() => setOpen(false)} className="block text-black px-2 py-1 hover:bg-blue-500 rounded">Sobre</a></li>
-                        <li><a href="#projetos" onClick={() => setOpen(false)} className="block text-black px-2 py-1 hover:bg-blue-500 rounded">Projetos</a></li>
-                        <li><a href="#contato" onClick={() => setOpen(false)} className="block text-black px-2 py-1 hover:bg-blue-500 rounded">Contatos</a></li>
-                    </ul>
+            {shouldRender && (
+                <div>
+                    
                 </div>
             )}
-            */}
         </div>
     );
 };
