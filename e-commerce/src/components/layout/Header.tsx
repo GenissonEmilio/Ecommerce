@@ -5,34 +5,55 @@ import { FaReact, FaShoppingCart } from "react-icons/fa";
 
 export default function Header() {
   return (
-    <header className="bg-[#2C3E91] text-white p-4 flex flex-nowrap items-center gap-4 w-full overflow-x-auto">
-      {/* Logo + nome */}
-      <div className="flex items-center flex-shrink-0">
-        <FaReact size={25} />
+    <header className="w-full overflow-x-hidden">
+      {/* Parte 1: logo, barra de pesquisa, carrinho */}
+      <div className="bg-[#2C3E91] text-white p-4 flex flex-wrap items-center gap-4 h-16">
+        {/* Logo + nome */}
+        <div className="flex items-center flex-shrink-0">
+          <FaReact className="text-2xl" />
+          <Link
+            href="/"
+            className="ml-2 font-bold whitespace-nowrap flex-shrink-0"
+          >
+            Emilian Shop
+          </Link>
+        </div>
+
+        {/* SearchBar central */}
+        <div className="flex-1 min-w-[200px]">
+          <SearchBar />
+        </div>
+
+        {/* Carrinho */}
         <Link
-          href="/"
-          className="ml-2 text-lg font-bold whitespace-nowrap flex-shrink-0"
+          href="/cart"
+          className="text-white hover:text-gray-300 transition-colors duration-300 flex-shrink-0"
         >
-          Emilian Shop
+          <FaShoppingCart className="text-2xl" />
         </Link>
       </div>
 
-      {/* SearchBar central */}
-      <div className="flex-1 min-w-[150px] max-w-[300px]">
-        <SearchBar />
-      </div>
+      {/* Parte 2: menu, login e signup */}
+      <div className="bg-[#1D2B66] p-3 h-10 flex items-center justify-between">
+        <div className="flex items-center text-white">
+          <Menu />
+          <span>Todos</span>
+        </div>
 
-      {/* Carrinho */}
-      <Link
-        href="/cart"
-        className="text-white hover:text-gray-300 transition-colors duration-300 flex-shrink-0"
-      >
-        <FaShoppingCart size={25} />
-      </Link>
-
-      {/* Menu */}
-      <div className="flex-shrink-0">
-        <Menu />
+        <div className="flex items-center">
+          <Link
+            href="/login"
+            className="text-white hover:text-gray-300 transition-colors duration-300"
+          >
+            Login
+          </Link>
+          <Link
+            href="/signup"
+            className="text-white hover:text-gray-300 transition-colors duration-300 ml-4"
+          >
+            Sign Up
+          </Link>
+        </div>
       </div>
     </header>
   );
