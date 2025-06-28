@@ -1,6 +1,6 @@
 "use client";
 
-import Slider from "react-slick";
+import Slider, { CustomArrowProps } from "react-slick";
 import Image from "next/image";
 import { GoChevronRight, GoChevronLeft } from "react-icons/go";
 
@@ -10,7 +10,7 @@ const adImages = [
   "https://m.media-amazon.com/images/I/61Y5G9U+4rL._SX3000_.jpg",
 ];
 
-function PrevArrow(props: any) {
+function PrevArrow(props: CustomArrowProps) {
   const { onClick } = props;
   return (
     <div
@@ -22,7 +22,7 @@ function PrevArrow(props: any) {
   );
 }
 
-function NextArrow(props: any) {
+function NextArrow(props: CustomArrowProps) {
   const { onClick } = props;
   return (
     <div
