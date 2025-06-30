@@ -37,7 +37,7 @@ export const CarouselProductArea = () => {
   };
 
   return (
-    <div className="px-4">
+    <div className="px-10">
       <Slider {...settings}>
         {[...Array(10)].map((_, index) => (
           <div key={index} className="px-2">

@@ -1,6 +1,6 @@
 export const Product = () => {
   return (
-    <div className="w-[200px] h-[300px] bg-white text-black rounded-md shadow-md border flex-shrink-0 flex flex-col p-4">
+    <div className="w-[150px] h-[250px] bg-white text-black rounded-md shadow-md border flex-shrink-0 flex flex-col p-4">
       <div className="flex-1 flex items-center justify-center bg-gray-100 rounded mb-4">
         <span className="text-gray-400">Product Image</span>
       </div>
