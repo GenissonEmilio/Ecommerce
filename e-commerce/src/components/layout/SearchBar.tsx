@@ -11,7 +11,7 @@ export default function SearchBar() {
       <input
         type="text"
         placeholder="Pesquisar Emilian Shop"
-        className="flex-1 px-4 py-2 outline-none text-black"
+        className="flex-1 px-3 py-2 outline-none text-black"
       />
       <button
         type="submit"
