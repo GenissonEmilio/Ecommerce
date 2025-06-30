@@ -25,12 +25,12 @@ export default function Home() {
 
         {/* Area de Produtos em oferta */}
         <div className="p-4">
-          <ProductArea areaName={"Produtos em Oferta"}/>
+          <ProductArea areaName={"Produtos em Oferta"} />
         </div>
 
         {/* Area de Produtos em Destaque */}
         <div className="p-4">
-          <ProductArea areaName={"Produtos em Destaque"}/>
+          <ProductArea areaName={"Produtos em Destaque"} />
         </div>
       </div>
     </div>
