@@ -4,11 +4,10 @@ import { AdArea } from "@/components/layout/AdArea";
 import Header from "@/components/layout/Header";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { useMediaQuery } from "@/hooks/useMediaQuery";
 import { ProductArea } from "@/components/layout/ProductArea";
+import { CarouselProductArea } from "@/components/layout/CarouselProductArea";
 
 export default function Home() {
-  const isMdOrLarge = useMediaQuery("(min-width: 768px)");
 
   return (
     <div>
@@ -17,7 +16,12 @@ export default function Home() {
 
       <div>
         {/*Area de anuncios */}
-        {isMdOrLarge && <AdArea />}
+        <AdArea />
+
+        {/* Area de Produtos em Carrossel */}
+        <div className="p-4">
+          <CarouselProductArea />
+        </div>
 
         {/* Area de Produtos em oferta */}
         <div className="p-4">
