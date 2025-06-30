@@ -10,10 +10,10 @@ export default function Header() {
       <div className="bg-[#2C3E91] text-white p-4 flex flex-wrap items-center gap-4 h-16">
         {/* Logo + nome */}
         <div className="flex items-center flex-shrink-0">
-          <FaReact className="text-1xl" />
+          <FaReact className="text-2xl" />
           <Link
             href="/"
-            className="ml-2 font-bold whitespace-nowrap flex-shrink-0"
+            className="ml-2 font-bold whitespace-nowrap flex-shrink-0 hidden sm:block"
           >
             Emilian Shop
           </Link>

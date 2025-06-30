@@ -29,18 +29,18 @@ export const CarouselProductArea = () => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1.3,
-          slidesToScroll: 1,
+          slidesToShow: 2,
+          slidesToScroll: 2,
         },
       },
     ],
   };
 
   return (
-    <div className="px-10">
+    <div>
       <Slider {...settings}>
         {[...Array(10)].map((_, index) => (
-          <div key={index} className="px-2">
+          <div key={index}>
             <Product />
           </div>
         ))}
