@@ -6,8 +6,7 @@ import { GoChevronRight, GoChevronLeft } from "react-icons/go";
 
 const adImages = [
   "https://m.media-amazon.com/images/I/810bk6Bif-L._SX3000_.jpg",
-  "https://m.media-amazon.com/images/I/71Q9d6N7xkL._SX3000_.jpg",
-  "https://m.media-amazon.com/images/I/61Y5G9U+4rL._SX3000_.jpg",
+  
 ];
 
 function PrevArrow(props: CustomArrowProps) {
@@ -56,8 +55,8 @@ export const AdArea = () => {
             <Image
               src={src}
               alt={`Ad ${index}`}
-              width={3000}
-              height={600}
+              width={300}
+              height={300}
               className="w-full h-auto object-cover"
               priority
             />
