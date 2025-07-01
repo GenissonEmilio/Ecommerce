@@ -19,7 +19,7 @@ export default function Home() {
         <AdArea />
 
         {/* Area de Produtos em Carrossel */}
-        <div className="p-4">
+        <div className="p-4 block md:hidden">
           <CarouselProductArea />
         </div>
 
