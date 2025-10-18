@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { FaHome, FaThLarge, FaBox, FaShoppingCart, FaClipboardList, FaUser, FaInfoCircle } from "react-icons/fa";
+import { IoMdClose } from "react-icons/io";
 import Link from "next/link";
 
 export default function Menu() {
@@ -34,8 +35,7 @@ export default function Menu() {
           onClick={() => setOpen(false)}
           className="absolute top-4 right-4 w-10 h-10 flex flex-col justify-center items-center gap-[5px] bg-transparent cursor-pointer"
         >
-            <span className={`w-[25px] h-[3px] bg-white rounded transition-transform duration-300 ${isOpen ? "translate-y-[2px] rotate-58" : ""}`}></span>
-            <span className={`w-[25px] h-[3px] bg-white rounded transition-transform duration-300 ${isOpen ? "-translate-y-[6px] -rotate-60" : ""}`}></span>
+            <IoMdClose className="w-6 h-6 text-white text-xl" />
         </button>
 
         <ul className="space-y-6 text-lg font-medium mt-10">
