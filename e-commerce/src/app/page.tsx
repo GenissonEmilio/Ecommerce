@@ -6,6 +6,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { ProductArea } from "@/components/layout/ProductArea";
 import { CarouselProductArea } from "@/components/layout/CarouselProductArea";
+import Footer from "@/components/layout/Footer";
 
 export default function Home() {
 
@@ -33,6 +34,9 @@ export default function Home() {
           <ProductArea areaName={"Produtos em Destaque"} />
         </div>
       </div>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
